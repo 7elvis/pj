@@ -2,10 +2,10 @@ package com.example.webapp.repository;
 
 import com.example.webapp.entity.SedeHasMedicamentos;
 import com.example.webapp.entity.SedeHasMedicamentosId;
-import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.transaction.annotation.Transactional;
 
 public interface SedeHasMedicamentosRepository extends JpaRepository<SedeHasMedicamentos, SedeHasMedicamentosId> {
     @Transactional

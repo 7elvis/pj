@@ -1,5 +1,6 @@
 package com.example.webapp.entity;
 
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +8,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(name="`carrito`")
+@Table(name="carrito")
 public class Carrito {
 
     @EmbeddedId
@@ -25,4 +26,7 @@ public class Carrito {
 
     @Column(nullable = false)
     private int cantidad;
+    private String numero_pedido;
+    private String estado_de_compra;
 }
+
